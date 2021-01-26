@@ -27,14 +27,14 @@ There are layers upon layers of nested functions within the game of baseball. Yo
 
 ## Instructions
 
-### Task 1 - Set Up Project and Tests
+<!-- ### Task 1 - Set Up Project and Tests
 
 1. Fork the repo
 2. Clone your forked version of the repo
 3. cd into your repo and create a branch with your first and last name
 4. open the terminal in your vs code and type `npm install`
 5. next type `npm run test:watch` in your terminal
-6. Complete your work making regular commits, once you have all your tests passing and you are ready to submit your work please see canvas for instructions on how to submit
+6. Complete your work making regular commits, once you have all your tests passing and you are ready to submit your work please see canvas for instructions on how to submit -->
 
 ### Task 2a - MVP code
 
@@ -65,8 +65,16 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+
+Closure occurs in the anonymous function when it must reach out of its function scope to find the name parameter for the template literal of console.log
+
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+
+dansRoll is always invoking personalDice with a parameter of "dan". What does not change is the range of the possible dice rolls is always 0-5
+
 c. What is the lexical scope of `newRoll`?
+
+newRoll is within the function scope of the anonymous function and can not be accessed by personalDice but the newRoll may be accessed by the anonymous function
 
 ### Task 3 - Stretch Goals
 
